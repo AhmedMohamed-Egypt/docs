@@ -1,0 +1,11 @@
+//@import './bootstrap/bootstrap.min';
+@import "_vars.scss";
+@import "_mixins.scss";
+@import "_typography.scss";
+@import "_helpers.scss";
+@import "layout.scss";
+
+@import "components/_hamburgmenu.scss";
+
+@import "structure/_hero.scss";
+@import 'structure/_navBar.scss';

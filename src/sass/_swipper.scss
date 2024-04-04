@@ -1,0 +1,177 @@
+%common {
+  font-family: "icomoon" !important;
+  font-weight: bold;
+  font-size: 24px;
+  color: #b480ee;
+}
+%pagination{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  @include max(450px) {
+   // top: 45%;
+  }
+  > div {
+    position: relative;
+  }
+
+
+  .swiper-button-next {
+    right: -5%;
+    &::after {
+      content: "\e900";
+
+      @extend %common;
+    }
+  }
+  .swiper-button-prev {
+    left: -5%;
+    &::after {
+      content: "\e901";
+      @extend %common;
+    }
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  /*
+   padding-left: 50px;
+   padding-right: 50px;
+   */
+}
+/*swiper for get tickets*/
+%bkground {
+  width: 140px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+%psedu {
+  content: "";
+  width: 22px;
+  height: 15px;
+}
+/* swiper cards */
+.how-it-work {
+  .card-how-it-work {
+    .swiper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 0;
+
+      .swiper-button-next {
+        right: -5%;
+        &::after {
+          content: "\e900";
+    
+          font-family: "icomoon" !important;
+  font-weight: bold;
+  font-size: 24px;
+  color: #b480ee;
+        }
+      }
+      .swiper-button-prev {
+        left: -5%;
+        &::after {
+          content: "\e901";
+          font-family: "icomoon" !important;
+          font-weight: bold;
+          font-size: 24px;
+          color: #b480ee;
+        }
+      }
+    }
+  }
+  .pagination {
+ @extend %pagination;
+  }
+
+}
+/*swiper token list */
+
+.theToken__list{
+  .swiper-slide{
+    width: 100% !important;
+  }
+  .swiper-wrapper{
+    
+   
+    @include min(770px){
+      display: flex;
+    flex-direction: column;
+     }
+    
+    .swiper-slide{
+    
+     @include min(770px){
+      width: 100% !important;
+     }
+    }
+  }
+  .swiper-pagination {
+
+    .swiper-pagination-bullet{
+      width: 13px;
+      height: 13px;
+      &:not(.swiper-pagination-bullet-active){
+        background-color: transparent;
+        border: 1px solid #AB8BD1;
+      }
+      &.swiper-pagination-bullet-active{
+        background-color: #57258F;
+      }
+    }
+  }
+}
+
+.theToken__traffic{
+  .swiper-wrapper{
+    
+    margin: 0;
+    @include min(651px){
+    
+      display: flex;
+  flex-wrap: wrap;
+     }
+    .swiper-slide{
+      @include min(1201px){
+        width: 32% !important;
+      }
+      @include min(651px){
+        width: 48% !important;
+        display: flex;
+    flex-wrap: wrap;
+       }
+      .theToken__traffic--content{
+        width: 100% !important;
+      }
+    }
+   
+  }
+  .pagination {
+    @extend %pagination;
+    width: 85%;
+    top: 40px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    .swiper-button-prev, .swiper-button-next{
+      top: -20px;
+    }
+    .swiper-button-prev{
+     left: 0;
+    
+    }
+    .swiper-button-next{
+     right: 0;
+     
+    } 
+     }
+}
+
+

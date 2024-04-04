@@ -1,0 +1,115 @@
+body {
+  background-color: #180e25;
+}
+.header-adrop {
+  background-color: #180e25;
+
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+
+  &::after {
+    @include after();
+    top: auto;
+    bottom: 0;
+    background-color: #4d3171;
+    height: 1px;
+  }
+
+  /*
+  padding-top: 30px;
+  padding-bottom: 30px;
+  */
+  .searchBar {
+    //  flex-grow: 1;
+    width: calc(100% - 450px);
+    /* margin: auto; */
+    margin-left: auto;
+    svg {
+      width: 20px;
+      margin-right: 10px;
+      path {
+        fill: $txtColors;
+        fill: #382d49;
+      }
+    }
+    input {
+      background: none;
+      border: none;
+
+      font-size: 17px;
+      color: $txtColors;
+
+      &::placeholder {
+        color: $txtColors;
+      }
+      &:focus {
+        border: none;
+        outline: 0;
+      }
+    }
+  }
+
+  &__logo {
+    p {
+      span {
+        @include max(435px) {
+          font-size: 24px;
+          &:nth-child(2) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    @include min(769px) {
+      // position: absolute;
+    }
+    @include max(768px) {
+      order: -3;
+    }
+    img {
+      width: 50px;
+      @include max(435px) {
+        width: 35px;
+      }
+    }
+  }
+  &__menumobile {
+    .social {
+      display: none;
+    }
+    justify-content: center;
+
+    @include max(768px) {
+      width: 100%;
+      flex-direction: column;
+      // display: none;
+      overflow: hidden;
+      .social {
+        display: block;
+        order: 12;
+        .footer-adrop__container--socialLinks {
+          justify-content: space-around;
+          padding: 30px 0;
+        }
+      }
+    }
+  }
+}
+
+select {
+  background: none;
+  border: none;
+  border: 1px solid #b6a5cf;
+  border-radius: 2px;
+  color: #b6a5cf;
+  cursor: pointer;
+  outline: 0;
+  align-self: center;
+  padding: 2px 4px;
+
+  option {
+    cursor: pointer;
+  }
+}

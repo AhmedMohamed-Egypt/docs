@@ -1,0 +1,39 @@
+.mrGain-navBar {
+    height: 100vh;
+    background-color: #0a0312;
+    width: 280px;
+    padding-top: 50px;
+    position: fixed;
+    left: 0;
+    top: 90px;
+    border-right: 1px solid #4d3171;
+  
+    >a{
+        text-align: center;
+        color: #b6a5cf;
+        font-size: 18px;
+        padding: 15px 0;
+    }
+}
+.content-container{
+    width: calc(100% - 280px);
+    background-color: #180e25;
+    margin-top: 90px;
+    /* margin-left: 280px; */
+    position: relative;
+    left: 280px;
+    .content-child{
+        width: 92%;
+        margin-left: auto;
+    }
+    
+}
+
+.content-text{
+    width: 75%;
+    
+}
+.nav-child{
+    position: relative;
+    top: 90px;
+}
