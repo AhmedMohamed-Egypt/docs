@@ -1,21 +1,16 @@
-import {NavLink,Link} from 'react-router-dom'
+import { NavLink, Link } from "react-router-dom";
+import { UseTranslate } from "../context/TranslateContext";
 
 function NavBar() {
+  const { dataLang } = UseTranslate();
 
-
-    return (
-
-        <nav className='mrGain-navBar'>
-            <NavLink to="/">Intro</NavLink>
-            <NavLink to="/Token">Token</NavLink>
-            <NavLink to="/Lottery">Lottery</NavLink>
-            <NavLink to="/Sponsors">Sponsors</NavLink>
-            <NavLink to="/RoadMap">RoadMap</NavLink>
-            <NavLink to="/Marketing">Marketing</NavLink>
-
-        </nav>
-   
-    )
+  return (
+    <nav className="mrGain-navBar">
+      {dataLang.nav.map((item,index) => (
+        <NavLink key={index} to={item.path}>{item.value}</NavLink>
+      ))}
+    </nav>
+  );
 }
 
-export default NavBar
+export default NavBar;

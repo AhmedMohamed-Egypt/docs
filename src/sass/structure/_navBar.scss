@@ -13,6 +13,9 @@
         color: #b6a5cf;
         font-size: 18px;
         padding: 15px 0;
+        &.active{
+            color: #311f74;
+        }
     }
 }
 .content-container{

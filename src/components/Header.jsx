@@ -1,9 +1,21 @@
+import { useState } from "react";
 import Dropdown from "./Dropdown";
+import { NavLink } from "react-router-dom";
 
+const searchList = [{titleNav:'Token',titleArticle:'Seamless'},{titleNav:'Lottery',titleArticle:'Howden'}]
 function Header() {
+  const [word,setWord] = useState('')
+  const searchedItems = word.length>0?searchList.filter((item)=>{
+    return (
+      item.titleNav.toLowerCase().indexOf(word.toLowerCase())>-1 ||
+      item.titleArticle.toLowerCase().indexOf(word.toLowerCase())>-1
+    )
+  }):[]
+  
+  
   return (
-    
-      <div className="header-adrop d-flex  pdl-50 pdr-50  pdtop-9 pdb-9 align-items-center" onClick={()=>console.log(5)}>
+   
+      <div className="header-adrop d-flex  pdl-50 pdr-50  pdtop-9 pdb-9 align-items-center">
         <a
           className="header-adrop__logo white d-flex align-items-center"
           href="#"
@@ -34,7 +46,12 @@ function Header() {
             </svg>
           </span>
           <div className="input-search">
-            <input type="text" placeholder="Search Gain Docs" />
+            <input type="text" placeholder="Search Gain Docs" onChange={(e)=>setWord(e.target.value)} />
+            <ul>
+            {searchedItems.map((item)=><li>
+              <NavLink to={`/${item.titleNav}`}>{`${item.titleArticle}/${item.titleNav}`}</NavLink>
+            </li>)}
+            </ul>
           </div>
         </div>
         <p className="lghtv size-18 violietBorder align-self-center mrt-15">Docs</p>
