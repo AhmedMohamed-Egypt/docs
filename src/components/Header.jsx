@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 import { NavLink } from "react-router-dom";
+import { UseTranslate } from "../context/TranslateContext";
 
 const searchList = [{titleNav:'Token',titleArticle:'Seamless'},{titleNav:'Lottery',titleArticle:'Howden'}]
 function Header() {
@@ -11,6 +12,18 @@ function Header() {
       item.titleArticle.toLowerCase().indexOf(word.toLowerCase())>-1
     )
   }):[]
+  
+  const {dataLang} = UseTranslate()
+  console.log(dataLang.maindocs)
+ 
+
+  
+   const currencyReg = Object.keys(dataLang.maindocs).map((key) => {
+    return { cur: key, val: dataLang.maindocs[key] };
+  }).map((item)=>{
+    return item.val
+  })
+  console.log(currencyReg)
   
   
   return (
@@ -46,7 +59,7 @@ function Header() {
             </svg>
           </span>
           <div className="input-search">
-            <input type="text" placeholder="Search Gain Docs" onChange={(e)=>setWord(e.target.value)} />
+            <input type="text" placeholder={dataLang.search} onChange={(e)=>setWord(e.target.value)} />
             <ul>
             {searchedItems.map((item)=><li>
               <NavLink to={`/${item.titleNav}`}>{`${item.titleArticle}/${item.titleNav}`}</NavLink>
@@ -54,7 +67,7 @@ function Header() {
             </ul>
           </div>
         </div>
-        <p className="lghtv size-18 violietBorder align-self-center mrt-15">Docs</p>
+        <p className="lghtv size-18 violietBorder align-self-center mrt-15">{dataLang.docs}</p>
         <Dropdown/>
       </div>
     

@@ -1,4 +1,6 @@
 {
+  "search":"recherche",
+  "docs":"Documents",
   "nav": [
     { "value": "introduction","path":"/" },
     { "value": "Jeton","path":"/Token" },
