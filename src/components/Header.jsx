@@ -9,6 +9,7 @@ function Header() {
   const mainList = Object.keys(dataLang.maindocs).map((key) => {
     return { ...dataLang.maindocs[key][0] };
   });
+  console.log(mainList)
   const searchedList =
     word.length > 0
       ? mainList.filter((item) => {
@@ -61,7 +62,7 @@ function Header() {
             <ul className="searchList">
             {searchedList.map((item) => (
               <li key={item.id}>
-                <NavLink to={`/${item.title}`}>{`${item.title}`}</NavLink>
+                <NavLink to={`${item.path}`}>{`${item.titleNavBar}/${item.title}`}</NavLink>
               </li>
             ))}
           </ul>
