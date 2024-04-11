@@ -4,9 +4,9 @@ function Sponsors() {
     const {dataLang} = UseTranslate()
     return (
         <Layout>
-            {dataLang.sponsors.map((item)=>
+            {dataLang.maindocs.sponsors.map((item,index)=>
         
-        <div className="content-text">
+        <div className="content-text" key={index}>
         <h2 className="drkTxt mrb-10 size-30">{item.title}</h2>
         <p className="drkTxt mrb-25 size-20">{item.desc}</p>
         <p className="drkTxt mrb-25 size-20">

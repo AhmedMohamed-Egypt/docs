@@ -113,3 +113,28 @@ select {
     cursor: pointer;
   }
 }
+.input-search{
+  position: relative;
+  .searchList{
+    position: absolute;
+    width: 350px;
+    background-color: #6f2c91;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    z-index: 9999999;
+    top: 30px;
+   
+    li{
+      color: #fff;
+      margin-bottom: 15px;
+      >a{
+        font-size: 17px;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+}
+}

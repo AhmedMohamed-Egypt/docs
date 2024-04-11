@@ -7,7 +7,7 @@ function Intro() {
  
   return (
     <Layout>
-      {dataLang.intro.map((item)=>
+      {dataLang.maindocs.intro.map((item)=>
     
     <div className="content-text" key={item.id}>
     <h2 className="drkTxt mrb-10 size-30">{item.title}</h2>

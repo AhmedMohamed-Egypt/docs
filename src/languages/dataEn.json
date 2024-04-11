@@ -1,19 +1,15 @@
 {
   "search":"Search Gain Docs",
    "docs":"Docs",
-  "nav": [
-    { "value": "Intro","path":"/" },
-    { "value": "Token","path":"/Token" },
-    { "value": "Lottery","path":"/Lottery" },
-    { "value": "Sponsors","path":"/Sponsors" },
-    { "value": "Roadmap","path":"/Roadmap" },
-    { "value": "Marketing","path":"/Marketing" }
-  ],
+  
   "maindocs":{
     "intro":[
       {
+
         "id": 1,
-        "title": "Introduction",
+        "title": "seamless",
+        "titleNavBar":"Intro",
+        "path":"/",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
@@ -24,6 +20,8 @@
       {
         "id": 2,
         "title": "Token",
+        "titleNavBar":"Token",
+        "path":"/Token",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
@@ -34,6 +32,8 @@
       {
         "id": 3,
         "title": "Lottery",
+        "titleNavBar":"Lottery",
+        "path":"/Lottery",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
@@ -43,7 +43,9 @@
     "sponsors":[
       {
         "id": 4,
-        "title": "Sponsors",
+        "title": "Sponsors", 
+        "titleNavBar":"Sponsors",
+        "path":"/Sponsors",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
@@ -54,6 +56,8 @@
       {
         "id": 5,
         "title": "RoadMap",
+         "titleNavBar":"RoadMap",
+        "path":"/RoadMap",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
@@ -64,74 +68,15 @@
       {
         "id": 6,
         "title": "Marekting",
+        "titleNavBar":"Marketing",
+        "path":"/Marketing",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
         "lastUpdate":"Last updated 7 das ago"
       }
     ]
-  },
-    "intro":[
-        {
-          "id": 1,
-          "title": "Introduction",
-          "desc": "WhitePaper V1.0",
-          "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
-          "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-          "lastUpdate":"Last updated 7 das ago"
-        }
-      ],
-      "token":[
-        {
-          "id": 2,
-          "title": "Token",
-          "desc": "WhitePaper V1.0",
-          "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
-          "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-          "lastUpdate":"Last updated 7 das ago"
-        }
-      ],
-      "lottery":[
-        {
-          "id": 3,
-          "title": "Lottery",
-          "desc": "WhitePaper V1.0",
-          "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
-          "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-          "lastUpdate":"Last updated 7 das ago"
-        }
-      ],
-      "sponsors":[
-        {
-          "id": 4,
-          "title": "Sponsors",
-          "desc": "WhitePaper V1.0",
-          "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
-          "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-          "lastUpdate":"Last updated 7 das ago"
-        }
-      ],
-      "roadmap":[
-        {
-          "id": 5,
-          "title": "RoadMap",
-          "desc": "WhitePaper V1.0",
-          "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
-          "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-          "lastUpdate":"Last updated 7 das ago"
-        }
-      ],
-      "marekting":[
-        {
-          "id": 6,
-          "title": "Marekting",
-          "desc": "WhitePaper V1.0",
-          "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
-          "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-          "lastUpdate":"Last updated 7 das ago"
-        }
-      ]
-      
+  }
 }
 
    

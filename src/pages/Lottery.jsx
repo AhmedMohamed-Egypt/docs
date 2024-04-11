@@ -4,8 +4,8 @@ function Lottery() {
     const {dataLang} = UseTranslate()
     return (
         <Layout>
-            {dataLang.lottery.map((item)=>{
-                return (<div className="content-text">
+            {dataLang.maindocs.lottery.map((item,index)=>{
+                return (<div className="content-text" key={index}>
                 <h2 className="drkTxt mrb-10 size-30">{item.title}</h2>
                 <p className="drkTxt mrb-25 size-20">{item.desc}</p>
                 <p className="drkTxt mrb-25 size-20">

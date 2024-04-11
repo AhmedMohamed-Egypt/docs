@@ -5,8 +5,8 @@ function RoadMap() {
     return (
 
         <Layout>
-        {dataLang.roadmap.map((item)=>
-      <div className="content-text">
+        {dataLang.maindocs.roadmap.map((item,index)=>
+      <div className="content-text" key={index}>
       <h2 className="drkTxt mrb-10 size-30">{item.title}</h2>
       <p className="drkTxt mrb-25 size-20">{item.desc}</p>
       <p className="drkTxt mrb-25 size-20">

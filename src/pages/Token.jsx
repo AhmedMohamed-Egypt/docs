@@ -7,7 +7,7 @@ function Token() {
   
   return (
     <Layout>
-      {dataLang.token.map((item) => 
+      {dataLang.maindocs.token.map((item) => 
         <div className="content-text" key={item.id}>
           <h2 className="drkTxt mrb-10 size-30">{item.title}</h2>
           <p className="drkTxt mrb-25 size-20">{item.desc}</p>
