@@ -9,13 +9,16 @@ function Header() {
   const mainList = Object.keys(dataLang.maindocs).map((key) => {
     return { ...dataLang.maindocs[key][0] };
   });
-  console.log(mainList)
+ 
   const searchedList =
     word.length > 0
       ? mainList.filter((item) => {
           return (
             item.title.toLowerCase().indexOf(word.toLowerCase()) > -1 ||
-            item.titleNavBar.toLowerCase().indexOf(word.toLowerCase()) > -1
+            item.titleNavBar.toLowerCase().indexOf(word.toLowerCase()) > -1||
+            item.firstText.toLowerCase().indexOf(word.toLocaleLowerCase())>-1||
+            item.secondText.toLowerCase().indexOf(word.toLocaleLowerCase())>-1
+
           )
         })
       : [];

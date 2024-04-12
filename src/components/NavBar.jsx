@@ -14,7 +14,8 @@ function NavBar() {
         <NavLink key={index} to={item.path}>{item.titleNavBar}</NavLink>
       ))}
     </nav>
-  );
+  )
 }
 
 export default NavBar;
+
