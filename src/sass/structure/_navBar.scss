@@ -50,6 +50,9 @@
 .mainLink{
     display: block;
     position: relative;
+    &.active{
+        color: #311f74;
+    }
 }
 .chevronDown{
    position: absolute;
