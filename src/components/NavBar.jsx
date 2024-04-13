@@ -36,9 +36,9 @@ function NavBar() {
               </p>
               {show === index && (
                 <ul className="mtop-15">
-                  {subTitlesNav.map((itemSub) => {
+                  {subTitlesNav.map((itemSub,index) => {
                     return (
-                      <li className="mrb-15">
+                      <li className="mrb-15" key={index}>
                         <NavLink
                           onClick={() => setActivateCategory(true)}
                           to={`${itemSub.path}`}
