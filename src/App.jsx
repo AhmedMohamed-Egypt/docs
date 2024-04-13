@@ -6,25 +6,32 @@ import Intro from "./pages/Intro";
 
 import Token from "./pages/Token";
 import Sponsors from "./pages/Sponsors";
-import RoadMap from "./pages/RoadMap";
+
 import Marketing from "./pages/Marketing";
 import Lottery from "./pages/Lottery";
+import RoadMapIndex from "./pages/roadmap/RoadMapIndex";
 import { TranslateProvider } from "./context/TranslateContext";
+
+import RoadMapCatOne from "./pages/roadmap/RoadMapCatOne";
+import RoadMapCatTwo from "./pages/roadmap/RoadMapCatTwo";
 
 function App() {
   return (
-    <TranslateProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <TranslateProvider>
         <Routes>
-          <Route path="/" element={<Intro />} />
-          <Route path="Token" element={<Token />} />
-          <Route path="Lottery" element={<Lottery />} />
-          <Route path="Sponsors" element={<Sponsors />} />
-          <Route path="RoadMap" element={<RoadMap />} />
+          <Route index path="/" element={<Intro />} />
+          <Route path="/Token" element={<Token />} />
+          <Route path="/Lottery" element={<Lottery />} />
+          <Route path="/Sponsors" element={<Sponsors />} />
+          <Route path="RoadMap" element={<RoadMapIndex />}>
+            <Route path="ChapterOne" element={<RoadMapCatOne />} />
+            <Route path="ChapterTwo" element={<RoadMapCatTwo />} />
+          </Route>
           <Route path="Marketing" element={<Marketing />} />
         </Routes>
-      </BrowserRouter>
-    </TranslateProvider>
+      </TranslateProvider>
+    </BrowserRouter>
   );
 }
 

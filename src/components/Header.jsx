@@ -1,28 +1,36 @@
 import { useState } from "react";
 import Dropdown from "./Dropdown";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { UseTranslate } from "../context/TranslateContext";
 
 function Header() {
   const [word, setWord] = useState("");
-  const { dataLang } = UseTranslate();
+  const [showList, setShowList] = useState(false);
+  const { dataLang,setActivateCategory } = UseTranslate();
+  const handleChange = (e) => {
+    setWord(e.target.value);
+    setShowList(false);
+  };
   const mainList = Object.keys(dataLang.maindocs).map((key) => {
     return { ...dataLang.maindocs[key][0] };
   });
- 
+  
+
   const searchedList =
     word.length > 0
       ? mainList.filter((item) => {
           return (
-            item.title.toLowerCase().indexOf(word.toLowerCase()) > -1 ||
-            item.titleNavBar.toLowerCase().indexOf(word.toLowerCase()) > -1||
-            item.firstText.toLowerCase().indexOf(word.toLocaleLowerCase())>-1||
-            item.secondText.toLowerCase().indexOf(word.toLocaleLowerCase())>-1
-
-          )
+            item.title?.toLowerCase().indexOf(word.toLowerCase()) > -1 ||
+            item.titleNavBar?.toLowerCase().indexOf(word.toLowerCase()) > -1 ||
+            item.firstText?.toLowerCase().indexOf(word.toLocaleLowerCase()) >-1 ||      
+            item.secondText?.toLowerCase().indexOf(word.toLocaleLowerCase()) >-1||
+            item.categoreyOne?.map((item)=>item.firstText.toLowerCase().indexOf(word.toLowerCase())>-1)||
+            item.categoreyTwo?.map((item)=>item.firstText.toLowerCase().indexOf(word.toLowerCase())>-1)  
+          );
         })
       : [];
-      
+
+  
 
   return (
     <div className="header-adrop d-flex  pdl-50 pdr-50  pdtop-9 pdb-9 align-items-center">
@@ -59,19 +67,22 @@ function Header() {
           <input
             type="text"
             placeholder={dataLang.search}
-            onChange={(e) => setWord(e.target.value)}
+            onChange={(e) => handleChange(e)}
           />
-          {searchedList.length>0&&<>
-            <ul className="searchList">
-            {searchedList.map((item) => (
-              <li key={item.id}>
-                <NavLink to={`${item.path}`}>{`${item.titleNavBar}/${item.title}`}</NavLink>
-              </li>
-            ))}
-          </ul>
-          
-          </>}
-      
+          {searchedList.length > 0 && !showList && (
+            <>
+              <ul className="searchList">
+                {searchedList.map((item) => (
+                  <li key={item.id}>
+                    <NavLink
+                      onClick={() => {setShowList((showList) => !showList);setActivateCategory(false)}}
+                      to={`${item.path}`}
+                    >{`${item.titleNavBar}/${item.title}`}</NavLink>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       </div>
       <p className="lghtv size-18 violietBorder align-self-center mrt-15">

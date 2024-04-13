@@ -8,14 +8,20 @@
     top: 90px;
     border-right: 1px solid #4d3171;
   
-    >a{
+    >a,>div{
         text-align: center;
         color: #b6a5cf;
         font-size: 18px;
         padding: 15px 0;
         transition: .25s;
+        cursor: pointer;
         &.active{
             color: #311f74;
+        }
+    }
+    >div{
+        >p{
+            position: relative;
         }
     }
 }
@@ -40,6 +46,23 @@
 .nav-child{
     position: relative;
     top: 90px;
+}
+.mainLink{
+    display: block;
+    position: relative;
+}
+.chevronDown{
+   position: absolute;
+   right: 75px;
+   top: 0;
+   transition: .25s;
+   &.rotate{
+    transform: rotate(90deg);
+   }
+    &::before{
+        font-weight: bold !important;
+        font-size: 15px;
+    }
 }
 
 

@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom"
 import Header from "./Header"
 import NavBar from "./NavBar"
 function Layout({children}) {
@@ -9,7 +10,9 @@ function Layout({children}) {
          <div className="content-container">
           <div className="content-child">
           {children}
+         
           </div>
+         
          
          </div>
         </div>

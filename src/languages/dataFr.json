@@ -1,84 +1,102 @@
-
 {
-  "note":"Dont Translate key value of path in json file / keep it in all langauges json as english",
-  "search":"Search Gain Docs Fr",
-   "docs":"DocsFr",
+  "search": "Search Gain Docs Fr",
+  "docs": "DocsFr",
 
-  "maindocs":{
-    "intro":[
+  "maindocs": {
+    "intro": [
       {
-
         "id": 1,
-        "title": "IntroductionFr",
-        "titleNavBar":"IntroFr",
-        "path":"/",
-        "desc": "WhitePaper V1.0",
+        "title": "SeamlessFr",
+        "titleNavBar": "IntroFr",
+        "path": "/",
+        "desc": "WhitePaper V1.0 Fr",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
-        "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-        "lastUpdate":"Last updated 7 das ago"
+        "secondText": "Lorem ipsum ahmed dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
+        "lastUpdate": "Last updated 7 das ago"
       }
     ],
-    "token":[
+    "token": [
       {
         "id": 2,
         "title": "TokenFr",
-        "titleNavBar":"TokenFr",
-        "path":"/Token",
+        "titleNavBar": "TokenFr",
+        "path": "/Token",
         "desc": "WhitePaper V1.0",
-        "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
+        "firstText": "Lorem ipsum dolor sit amet work consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-        "lastUpdate":"Last updated 7 das ago"
+        "lastUpdate": "Last updated 7 das ago"
       }
     ],
-    "lottery":[
+    "lottery": [
       {
         "id": 3,
         "title": "LotteryFr",
-        "titleNavBar":"LotteryFr",
-        "path":"/Lottery",
+        "titleNavBar": "LotteryFr",
+        "path": "/Lottery",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-        "lastUpdate":"Last updated 7 das ago"
+        "lastUpdate": "Last updated 7 das ago"
       }
     ],
-    "sponsors":[
+    "sponsors": [
       {
         "id": 4,
-        "title": "SponsorsFr", 
-        "titleNavBar":"SponsorsFr",
-        "path":"/Sponsors",
+        "title": "SponsorsFr",
+        "titleNavBar": "SponsorsFr",
+        "path": "/Sponsors",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-        "lastUpdate":"Last updated 7 das ago"
+        "lastUpdate": "Last updated 7 das ago"
       }
     ],
-    "roadmap":[
+    "roadmap": [
       {
         "id": 5,
         "title": "RoadMapFr",
-         "titleNavBar":"RoadMapFr",
-        "path":"/RoadMap",
+        "titleNavBar": "RoadMapFr",
+        
+        "path": "RoadMap",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-        "lastUpdate":"Last updated 7 das ago"
+        "lastUpdate": "Last updated 7 das ago",
+        "subTitlesNav":[{"title":"navOneFr","path":"ChapterOne"},{"title":"navOneFr","path":"ChapterTwo"}]
       }
     ],
-    "marekting":[
+    "marekting": [
       {
         "id": 6,
         "title": "MarektingFr",
-        "titleNavBar":"MarketingFr",
-        "path":"/Marketing" ,
+        "titleNavBar": "MarketingFr",
+        "path": "/Marketing",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
-        "lastUpdate":"Last updated 7 das ago"
+        "lastUpdate": "Last updated 7 das ago"
+      }
+    ],
+    "categoreyOneRoadMap": [
+      {
+        "id": 7,
+        "title": "RoadMapOneFr",
+        "desc": "WhitePaper V1.0",
+        "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
+        "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
+        "lastUpdate": "Last updated 7 das ago"
+      }
+    ]
+    ,
+    "categoreyTwoRoadMap": [
+      {
+        "id": 8,
+        "title": "RoadMapTwoFr",
+        "desc": "WhitePaper V1.0",
+        "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
+        "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
+        "lastUpdate": "Last updated 7 das ago"
       }
     ]
   }
 }
-
-   
