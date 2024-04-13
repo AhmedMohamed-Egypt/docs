@@ -55,9 +55,8 @@
       {
         "id": 5,
         "title": "RoadMapFr",
-        "titleNavBar": "RoadMapFr",
-        
-        "path": "RoadMap",
+        "titleNavBar": "RoadMapFr",   
+        "path": "/RoadMap",
         "desc": "WhitePaper V1.0",
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
