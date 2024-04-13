@@ -15,15 +15,15 @@ function SubList({ indexItem, subList, mainItem }) {
           }
         }}
       >
-        <span  className={`mainLink ${show === indexItem ? 'active' : ''}`}>
+       <span  className={`mainLink ${show === indexItem ? 'active' : ''}`}>
           {mainItem.titleNavBar}
         </span>
 
-        <i
-          className={`${
-            show === indexItem ? "rotate" : ""
-          } chevronDown bi bi-chevron-right`}
-        ></i>
+       {subList.length>0&&  <i className={`${ show === indexItem ? "rotate" : ""} chevronDown bi bi-chevron-right`}
+          
+           
+          
+        ></i>}
       </p>
       {show === indexItem && (
         <ul className="mtop-15">

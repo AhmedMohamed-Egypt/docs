@@ -10,20 +10,19 @@ function NavBar() {
     return { ...dataLang.maindocs[key][0] };
   });
 
-  
-  const { subTitlesNav:subListRoadMap } = { ...dataLang.maindocs.roadmap }[0];
+  const allSubTitlesNav = allList.map((item) => item.subTitlesNav);
 
   return (
     <nav className="mrGain-navBar">
       {allList.map((item, index) => (
         <Fragment key={index}>
-          {index === 4 ? (
-            <SubList indexItem={index} subList={subListRoadMap} mainItem={item}/>
-          ) : (
-            <NavLink onClick={() => setShow(index)} to={item.path}>
-              {item.titleNavBar}
-            </NavLink>
-          )}
+          {
+            <SubList
+              indexItem={index}
+              subList={allSubTitlesNav[index]}
+              mainItem={item}
+            />
+          }
         </Fragment>
       ))}
     </nav>
