@@ -21,12 +21,12 @@ function App() {
       <TranslateProvider>
         <Routes>
           <Route index path="/" element={<Intro />} />
-          <Route path="/Token" element={<Token />} />
-          <Route path="/Lottery" element={<Lottery />} />
-          <Route path="/Sponsors" element={<Sponsors />} />
+          <Route path="Token" element={<Token />} />
+          <Route path="Lottery" element={<Lottery />} />
+          <Route path="Sponsors" element={<Sponsors />} />
           <Route path="RoadMap" element={<RoadMapIndex />}>
-            <Route path="ChapterOne" element={<RoadMapCatOne />} />
-            <Route path="ChapterTwo" element={<RoadMapCatTwo />} />
+            <Route path="roadMapOne" element={<RoadMapCatOne />} />
+            <Route path="roadMapTwo" element={<RoadMapCatTwo />} />
           </Route>
           <Route path="Marketing" element={<Marketing />} />
         </Routes>

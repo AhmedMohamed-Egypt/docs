@@ -87,7 +87,7 @@
         "firstText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil.",
         "secondText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus optio totam aperiam ducimus placeat vitae quasi soluta, harum consectetur magnam sequi accusamus iure saepe qui autem error doloremque nam nobis praesentium! Quis eos beatae repellat veritatis, magnam totam! Cupiditate quasi non illo omnis nihil",
         "lastUpdate": "Last updated 7 das ago",
-        "subTitlesNav":[{"title":"navOne","path":"ChapterOne"},{"title":"navTwo","path":"ChapterTwo"}],
+        "subTitlesNav":[{"title":"roadMapOne","path":"roadMapOne"},{"title":"roadMapTwo","path":"roadMapTwo"}],
         "categoreyOne": [
           {
             "id": 1,

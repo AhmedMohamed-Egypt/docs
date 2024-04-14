@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import SubList from "../hooks/SubList";
 
 function NavBar() {
-  const { dataLang, setShow } = UseTranslate();
+  const { dataLang } = UseTranslate();
 
   const allList = Object.keys(dataLang.maindocs).map((key) => {
     return { ...dataLang.maindocs[key][0] };
