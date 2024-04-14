@@ -24,6 +24,7 @@ function Header() {
             item.titleNavBar?.toLowerCase().indexOf(word.toLowerCase()) > -1 ||
             item.firstText?.toLowerCase().indexOf(word.toLocaleLowerCase()) >-1 ||      
             item.secondText?.toLowerCase().indexOf(word.toLocaleLowerCase()) >-1||
+            
             item.categoreyOne?.map((item)=>item.firstText.toLowerCase().indexOf(word.toLowerCase())>-1)||
             item.categoreyTwo?.map((item)=>item.firstText.toLowerCase().indexOf(word.toLowerCase())>-1)  
           );

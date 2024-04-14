@@ -1,12 +1,14 @@
-import Layout from "../components/Layout";
-import { UseTranslate } from "../context/TranslateContext";
+import { Outlet } from "react-router-dom";
+import Layout from "../../components/Layout";
+import { UseTranslate } from "../../context/TranslateContext";
 
 function Token() {
-  const { dataLang } = UseTranslate();
+  const { dataLang,activeCategorey } = UseTranslate();
 
   
   return (
     <Layout>
+      {activeCategorey===true?<Outlet/>:<>
       {dataLang.maindocs.token.map((item) => 
         <div className="content-text" key={item.id}>
           <h2 className="drkTxt mrb-10 size-30">{item.title}</h2>
@@ -16,6 +18,8 @@ function Token() {
           <span className="drkTxt ">{item.lastUpdate}</span>
         </div>
       )}
+      </>}
+     
     </Layout>
   );
 }

@@ -2,7 +2,7 @@ import { createContext, useReducer } from "react";
 import { useContext } from "react";
 import dataEn from '../languages/dataEn.json'
 import dataFr from '../languages/dataFr.json'
-import { act } from "react-dom/test-utils";
+
 
 
 const TranslateContext = createContext();
@@ -21,6 +21,7 @@ function getDataLanguages (stateLang){
      case 'FR':{
         return dataFr
      }
+      
   
    }
 }

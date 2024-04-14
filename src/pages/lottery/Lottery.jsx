@@ -1,5 +1,5 @@
-import Layout from "../components/Layout"
-import { UseTranslate } from "../context/TranslateContext"
+import Layout from "../../components/Layout"
+import { UseTranslate } from "../../context/TranslateContext"
 function Lottery() {
     const {dataLang} = UseTranslate()
     return (

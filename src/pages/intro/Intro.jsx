@@ -1,6 +1,6 @@
 
-import Layout from "../components/Layout";
-import { UseTranslate } from "../context/TranslateContext";
+import Layout from "../../components/Layout";
+import { UseTranslate } from "../../context/TranslateContext";
 
 function Intro() {
   const {dataLang}= UseTranslate()
@@ -18,6 +18,7 @@ function Intro() {
     <p className="drkTxt mrb-25 size-20">
       {item.secondText}
     </p>
+    <img className="responsive-img" src={`${item.ImageOne}`}/>
     <span className="drkTxt ">
         {item.lastUpdate}
     </span>

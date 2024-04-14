@@ -1,10 +1,11 @@
-import Layout from "../components/Layout"
-import { UseTranslate } from "../context/TranslateContext"
-function Marketing() {
+import Layout from "../../components/Layout"
+import { UseTranslate } from "../../context/TranslateContext"
+function Sponsors() {
     const {dataLang} = UseTranslate()
     return (
         <Layout>
-       {dataLang.maindocs.marekting.map((item,index)=>
+            {dataLang.maindocs.sponsors.map((item,index)=>
+        
         <div className="content-text" key={index}>
         <h2 className="drkTxt mrb-10 size-30">{item.title}</h2>
         <p className="drkTxt mrb-25 size-20">{item.desc}</p>
@@ -12,15 +13,17 @@ function Marketing() {
            {item.firstText}
         </p>
         <p className="drkTxt mrb-25 size-20">
-            {item.secondText}
+        {item.secondText}
         </p>
         <span className="drkTxt ">
-           {item.lastUpdate}
+            {item.lastUpdate}
         </span>
       </div>
-    )}
+        
+        )}
+      
       </Layout>
     )
 }
 
-export default Marketing
+export default Sponsors
