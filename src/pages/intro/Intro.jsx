@@ -18,7 +18,7 @@ function Intro() {
     <p className="drkTxt mrb-25 size-20">
       {item.secondText}
     </p>
-    <img className="responsive-img" src={`${item.ImageOne}`}/>
+    {/*<img className="responsive-img" src={`${item.ImageOne}`}/>*/}
     <span className="drkTxt ">
         {item.lastUpdate}
     </span>
