@@ -8,6 +8,23 @@ body {
   width: 100%;
   left: 0;
   z-index: 999;
+  @include max(570px){
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  >p.violietBorder,>select {
+    @include max(570px){
+      order: -2;
+      margin: 0;
+    }
+  }
+  >p.violietBorder{
+    @include max(570px){
+      margin-left: auto;
+      margin-right: 15px;
+    }
+  }
 
   &::after {
     @include after();
@@ -29,6 +46,10 @@ body {
     svg {
       width: 20px;
       margin-right: 10px;
+      @include max(1050px){
+        position: relative;
+        top: -2px;
+      }
       path {
         fill: $txtColors;
         fill: #382d49;
@@ -49,15 +70,33 @@ body {
         outline: 0;
       }
     }
+    @include max(1050px){
+      width: 400px;
+      margin-right: auto;
+      margin-left: 50px;
+    }
+    @include max(570px){
+     margin: 0;
+     width: 100%;
+     padding: 10px 0;
+    }
+    @include max(450px){
+      margin-left: auto;
+      width: 90%;
+   
+     }
   }
 
   &__logo {
+    img{
+     
+    }
     p {
       span {
-        @include max(435px) {
-          font-size: 24px;
+        @include max(700px) {
+          font-size: 22px;
           &:nth-child(2) {
-            font-size: 10px;
+            font-size: 8px;
           }
         }
       }
@@ -70,7 +109,7 @@ body {
     }
     img {
       width: 50px;
-      @include max(435px) {
+      @include max(700px) {
         width: 35px;
       }
     }

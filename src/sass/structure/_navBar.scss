@@ -6,7 +6,15 @@
     position: fixed;
     left: 0;
     top: 90px;
+    transition: .25s;
+    @include max(700px){
+        top: 70px;
+    }
+
     border-right: 1px solid #4d3171;
+    @include max(700px){
+        width: 170px;
+    }
   
     >a,>div{
         text-align: center;
@@ -20,8 +28,25 @@
         }
     }
     >div{
+        @include max(700px){
+            text-align: left;
+            padding-left: 25px;
+        }
         >p{
             position: relative;
+            @include max(700px){
+              display: flex;
+             
+               }
+               &~ul{
+                li{
+                    a{
+                        @include max(700px){
+                            font-size: 15px;
+                        }
+                    }
+                }
+               }
         }
     }
 }
@@ -32,6 +57,12 @@
     /* margin-left: 280px; */
     position: relative;
     left: 280px;
+    padding-bottom: 50px;
+    transition: .5s;
+   @include max(700px){
+    width: calc(100% - 170px);
+    left: 170px;
+   }
     .content-child{
         width: 92%;
         margin-left: auto;
@@ -41,15 +72,33 @@
 
 .content-text{
     width: 75%;
+    @include max(1050px){
+        width: 90%;
+        h2,p{
+            font-size: 17px !important;
+        }
+    }
+    @include max(500px){
+        
+        h2,p{
+            font-size: 15px !important;
+        }
+    }
     
 }
 .nav-child{
     position: relative;
     top: 90px;
+    @include max(700px){
+        top: 70px;
+    }
 }
 .mainLink{
     display: block;
     position: relative;
+    @include max(700px){
+        font-size: 14px;
+    }
     &.active{
         color: #311f74;
     }
@@ -59,6 +108,10 @@
    right: 75px;
    top: 0;
    transition: .25s;
+   @include max(700px){
+    position: static;
+    margin-left: 25px;
+   }
    &.rotate{
     transform: rotate(90deg);
    }
@@ -69,3 +122,41 @@
 }
 
 
+.closeNav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    i{
+        color: #fff;
+        font-size: 35px;
+        
+        &::before{
+            transition: .5s;
+        }
+    }
+}
+body.close{
+    .mrGain-navBar{
+        width: 50px;
+        overflow: hidden;
+        >div{
+            display: none;
+        }
+    }
+    .content-container{
+        width: calc(100% - 50px);
+        left: 50px;
+    }
+    .closeNav{
+        i{
+            &::before{
+                transform: rotate(180deg);
+            }
+           
+        }
+    }
+    .content-container .content-child{
+      width: 98%;
+    }
+}
