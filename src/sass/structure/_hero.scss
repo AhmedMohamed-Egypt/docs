@@ -164,12 +164,16 @@ select {
     padding-left: 20px;
     z-index: 9999999;
     top: 30px;
+    max-width: 100%;
    
     li{
       color: #fff;
       margin-bottom: 15px;
       >a{
         font-size: 17px;
+        @include max(700px){
+          font-size: 14px;
+        }
       }
       &:last-child{
         margin-bottom: 0;
