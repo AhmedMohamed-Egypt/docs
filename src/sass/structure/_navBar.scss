@@ -58,7 +58,7 @@
     position: relative;
     left: 280px;
     padding-bottom: 50px;
-    transition: .5s;
+    transition: .25s;
    @include max(700px){
     width: calc(100% - 170px);
     left: 170px;
