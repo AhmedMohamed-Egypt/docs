@@ -19,6 +19,11 @@ function Intro() {
       {item.secondText}
     </p>
     {/*<img className="responsive-img" src={`${item.ImageOne}`}/>*/}
+    <div className="videoYoutbe">
+    <iframe width="420" height="315"
+src={`${item.youtubeVideo}`}>
+</iframe>
+    </div>
     <span className="drkTxt ">
         {item.lastUpdate}
     </span>
